@@ -64,7 +64,7 @@ To run this project, you will need to add the following environment variables to
 
 | Parameter | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
-| `phoneNumber`      | `number` | **Required**. Your API key |
+| `email`      | `string` | **Required**. Your API key |
 | `password`      | `string` | **Required**. Your API key |
 
 
