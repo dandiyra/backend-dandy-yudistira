@@ -87,5 +87,80 @@ To run this project, you will need to add the following environment variables to
 | `tocken` | `string` | **Required**. Your API key |
 | `refreshToken` | `string` | **Required**. Your API key |
 
-A postman collection has been added for better understanding.
+#### Create Product
+
+```http
+  POST /produk/store
+```
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `id` | `uuid` | **Required**. Your API key |
+| `name` | `string` | **Required**. Your API key |
+| `price` | `number` | **Required**. Your API key |
+| `quantity` | `number` | **Required**. Your API key |
+
+#### Get List Product
+
+```http
+  GET /produk/
+```
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `id` | `uuid` | **Required**. Your API key |
+| `name` | `string` | **Required**. Your API key |
+| `price` | `number` | **Required**. Your API key |
+| `quantity` | `number` | **Required**. Your API key |
+
+#### Get Product By Id
+
+```http
+  GET /produk/id
+```
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `id` | `uuid` | **Required**. Your API key |
+| `name` | `string` | **Required**. Your API key |
+| `price` | `number` | **Required**. Your API key |
+| `quantity` | `number` | **Required**. Your API key |
+
+#### Update Product
+
+```http
+  PUT /produk/
+```
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `id` | `uuid` | **Required**. Your API key |
+| `name` | `string` | **Required**. Your API key |
+| `price` | `number` | **Required**. Your API key |
+| `quantity` | `number` | **Required**. Your API key |
+
+
+#### Delete Product
+
+```http
+  DELETE /produk/
+```
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `id` | `uuid` | **Required**. Your API key |
+| `name` | `string` | **Required**. Your API key |
+| `price` | `number` | **Required**. Your API key |
+| `quantity` | `number` | **Required**. Your API key |
+
+#### Buy Product
+```http
+  POST /user/buy
+```
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `prod_id` | `uuid` | **Required**. Your API key |
+| `quantity` | `number` | **Required**. Your API key |
+
 
