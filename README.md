@@ -1,7 +1,7 @@
 
 **Server:** Node, Express
 
-**DataBase:** postgres, typeorm
+**DataBase:** postgres/mysql, typeorm
 
 
 ## Run Locally
