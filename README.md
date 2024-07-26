@@ -41,7 +41,15 @@ To run this project, you will need to add the following environment variables to
 
 
 ## API Reference
+#### Create Role
 
+```http
+  POST /role/create
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `name`      | `string` | **Required**. Your API key |
 #### Create user
 
 ```http
