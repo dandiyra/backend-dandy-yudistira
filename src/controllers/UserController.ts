@@ -230,9 +230,9 @@ export const BuyProduk = async (req: AuthRequest, res: Response) => {
       return RequestFailed(res, 404, "produk");
     }
 
-    const increaseQuantity = produk.quantity - quantity;
+    const decreaseQuantity = produk.quantity - quantity;
     if (quantity) {
-      produk.quantity = increaseQuantity;
+      produk.quantity = decreaseQuantity;
     }
     await produk.save();
 
