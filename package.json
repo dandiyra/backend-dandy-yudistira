@@ -42,6 +42,7 @@
     "http": "^0.0.1-security",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.13.5",
+    "mysql": "^2.18.1",
     "pg": "^8.7.1",
     "typeorm": "^0.2.37",
     "typeorm-pagination": "^2.0.3",

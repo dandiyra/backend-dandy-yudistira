@@ -1,10 +1,10 @@
 {
-    "type": "postgres",
+    "type": "mysql",
     "host": "localhost",
-    "port": 5432,
-    "username": "postgres",
-    "password": "Highdecker4k",
-    "database": "Node",
+    "port": 3306,
+    "username": "root",
+    "password": "",
+    "database": "backend-dandy",
     "synchronize": true,
     "logging": true,
     "entities": [

@@ -51,6 +51,6 @@ export class User extends BaseEntity {
     @Column({ type: "timestamp", nullable: true })
     last_updated: Date;
 
-    @Column({ type: "timestamp" })
+    @Column({ type: "timestamp", nullable: true })
     timestamp: Date;
 }

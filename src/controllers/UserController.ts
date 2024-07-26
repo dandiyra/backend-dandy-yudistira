@@ -77,7 +77,7 @@ export const createUser = async (req: Request, res: Response) => {
     const lastname: string = req.body.lastName;
     const password: string = req.body.password;
     const profileImage: string = req.body.profileImage || "";
-    const phoneNumber: string = req.body.phoneNumber;
+    const email: string = req.body.email;
     const timestamp = req.body.timestamp
       ? new Date(req.body.timestamp)
       : new Date();
@@ -91,8 +91,8 @@ export const createUser = async (req: Request, res: Response) => {
     if (!password || !password.trim().length) {
       return RequestFailed(res, 400, "password");
     }
-    if (!phoneNumber || !phoneNumber.trim().length) {
-      return RequestFailed(res, 400, "phonenumber");
+    if (!email || !email.trim().length) {
+      return RequestFailed(res, 400, "email");
     }
 
     const role = await Role.findOne({
@@ -107,7 +107,7 @@ export const createUser = async (req: Request, res: Response) => {
       user.lastName = lastname;
       user.role = role;
       user.password = hashPassword;
-      user.phoneNumber = phoneNumber;
+      user.email = email;
       user.profileImage = profileImage;
       user.last_updated = new Date();
       user.timestamp = timestamp;
